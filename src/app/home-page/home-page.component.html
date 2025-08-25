@@ -1,1 +1,18 @@
-<p>home-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div fxLayout="row" fxFlex="100">
+        <button mat-button [matMenuTriggerFor]="MenuFunctions">Menu</button>
+        <mat-menu #MenuFunctions="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="CustomerDetails">Customer Details</button>
+            <button mat-menu-item [matMenuTriggerFor]="PendingRequest">Pending Request</button>
+        </mat-menu>
+
+    </div>
+</body>
+</html>
