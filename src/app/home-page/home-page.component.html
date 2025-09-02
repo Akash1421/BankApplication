@@ -2,17 +2,16 @@
     <div>
         <button mat-button [matMenuTriggerFor]="MenuFunctions">Menu</button>
         <mat-menu #MenuFunctions="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="CustomerDetails">Customer Details</button>
-            <button mat-menu-item [matMenuTriggerFor]="PendingRequest">Pending Request</button>
+            <button mat-menu-item (click)="gotoCustomerDetails()">Customer Details</button>
+            <button mat-menu-item (click)="gotoPendingRequest()">Pending Request</button>
         </mat-menu>
-    </div>
-    
+    </div>  
     <div>
         <button mat-button [matMenuTriggerFor]="ReportsAndDashBoards">ReportsAndDashBoards</button>
         <mat-menu #ReportsAndDashBoards="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="CustomerReports">Customer Reports</button>
-            <button mat-menu-item [matMenuTriggerFor]="ResourceUtilization">ResourceUtilization</button>
-            <button mat-menu-item [matMenuTriggerFor]="DailyReports">DailyReports</button>
+            <button mat-menu-item (click)="gotoCustomerReports()">Customer Reports</button>
+            <button mat-menu-item (click)="gotoResourceUtilization()">ResourceUtilization</button>
+            <button mat-menu-item (click)="gotoDailyReports()">DailyReports</button>
         </mat-menu>
     </div>
 </div>
