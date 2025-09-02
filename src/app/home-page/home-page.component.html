@@ -1,11 +1,18 @@
-<div fxLayout="row" fxFlex="100" class="header">
-    <div fxLayout="row" fxFlex="15" class="menuclass">
+<div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" class="header"> 
+    <div>
         <button mat-button [matMenuTriggerFor]="MenuFunctions">Menu</button>
         <mat-menu #MenuFunctions="matMenu">
             <button mat-menu-item [matMenuTriggerFor]="CustomerDetails">Customer Details</button>
             <button mat-menu-item [matMenuTriggerFor]="PendingRequest">Pending Request</button>
         </mat-menu>
-      
-
+    </div>
+    
+    <div>
+        <button mat-button [matMenuTriggerFor]="ReportsAndDashBoards">ReportsAndDashBoards</button>
+        <mat-menu #ReportsAndDashBoards="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="CustomerReports">Customer Reports</button>
+            <button mat-menu-item [matMenuTriggerFor]="ResourceUtilization">ResourceUtilization</button>
+            <button mat-menu-item [matMenuTriggerFor]="DailyReports">DailyReports</button>
+        </mat-menu>
     </div>
 </div>

@@ -13,5 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 export class HomePageComponent {
 PendingRequest: any;
 CustomerDetails: any;
+CustomerReports: any;
+ResourceUtilization: any;
+DailyReports: any;
 
 }
