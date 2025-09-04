@@ -26,10 +26,11 @@ throw new Error('Method not implemented.');
 gotoCustomerDetails() {
 throw new Error('Method not implemented.');
 }
-PendingRequest: any;
-CustomerDetails: any;
-CustomerReports: any;
-ResourceUtilization: any;
-DailyReports: any;
+ExternalApp1(){
+
+}
+ExternalApp2(){
+  
+}
 
 }

@@ -14,4 +14,11 @@
             <button mat-menu-item (click)="gotoDailyReports()">DailyReports</button>
         </mat-menu>
     </div>
+    <div>
+        <button mat-button [matMenuTriggerFor]="linkstab">Links</button>
+        <mat-menu #linkstab="matMenu">
+            <button mat-menu-item (click)="ExternalApp1()">ExternalApp1</button>
+            <button mat-menu-item (click)="ExternalApp2()">ExternalApp2</button>
+        </mat-menu>
+    </div>
 </div>
